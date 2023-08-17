@@ -3,16 +3,16 @@
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E1E;
 
 }
 nav{
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 }
 #mainmenu{
-    background-color: rgb(37, 37, 39);
+    background-color: transparent;
 }
 
 #mainmenu ul {
@@ -30,15 +30,20 @@ nav{
     padding: 20px;
     display: inline-block;
     text-decoration: none;
-    transition: background .4s;
+    border-radius: 10px;
+    transition: .4s;
 }
 
 #mainmenu ul li a:hover {
     background-color: rgb(24, 139, 233);
+    border-radius: 40px;
+    transition: .5s;
+
 }
 
 #mainmenu ul li:last-child a {
  
     background-color: rgb(24, 139, 233);
+    border-radius: 30px;
 }
 
