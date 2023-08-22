@@ -10,9 +10,12 @@
 nav{
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+
 }
 #mainmenu{
     background-color: transparent;
+    display: flex;
+    justify-content: space-around;
 }
 
 #mainmenu ul {
@@ -32,6 +35,13 @@ nav{
     text-decoration: none;
     border-radius: 10px;
     transition: .4s;
+    font-weight: 600;
+
+}
+
+#mainmenu #pages{
+   float: right;
+
 }
 
 #mainmenu ul li a:hover {
@@ -46,4 +56,10 @@ nav{
     background-color: rgb(24, 139, 233);
     border-radius: 30px;
 }
+#mainmenu #polarys{
 
+    }
+    hr{
+        
+    }
+    
