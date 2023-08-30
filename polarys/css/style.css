@@ -1,3 +1,8 @@
+:root {
+    --blue: #1363DF;
+    --red: rgba(245,12,70,1);
+    --purple: #813995;
+  }
 *{
     padding: 0;
     margin: 0;
@@ -44,7 +49,7 @@ nav{
 }
 
 #mainmenu ul li a:hover {
-    color: rgba(245,12,70,1);
+    color: var(--red);
     transition: .5s;
     animation: waviy 1s infinite;
     animation-delay: calc(.1s * var(--i))
@@ -94,14 +99,47 @@ nav{
         color: #fff;
         font-size: 3em;
         text-align: center;
+        text-shadow: 0 0 1.5em  var(--blue), 0 0 0 currentColor;
+       
+    
+    }
+    p{
+    
+        text-shadow: 0 0 1.5em  var(--red), 0 0 0 currentColor;
     }
     #subtext {
-        margin-top: 15px;
+        margin-top: 40px;
         display: flex;
   justify-content: center;
+ 
     }
     .maincontent #subtext h2{
         font-weight: 100;
         color: #9C9D9E;
         font-size: 1.5em;
+    }
+
+    .maincontent #btn-exp{
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+       
+    }
+    .maincontent #btn-exp h3{
+        background: linear-gradient(to right, var(--blue), var(--red));;
+        color: #fff;
+        font-weight: 100;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 30px;
+        /* box-shadow: 0 0 1.5em  var(--purple), 0 0 0 currentColor; */
+        box-shadow: 5px 5px 15px #000;
+        transition: 0.5s;
+        
+    }
+    .maincontent #btn-exp h3:hover{
+        box-shadow: 0 0 1.5em  var(--purple), 0 0 0 currentColor;
     }
