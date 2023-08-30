@@ -29,37 +29,79 @@ nav{
 }
 
 #mainmenu ul li a {
-    color: #FFF;
+    color: #fff;
     padding: 20px;
     display: inline-block;
     text-decoration: none;
     border-radius: 10px;
-    transition: .4s;
     font-weight: 600;
 
 }
 
 #mainmenu #pages{
-   float: right;
-
+    float: right;
+    align-self: center;
 }
 
 #mainmenu ul li a:hover {
-    background-color: rgb(24, 139, 233);
-    border-radius: 40px;
+    color: rgba(245,12,70,1);
     transition: .5s;
-
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i))
 }
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 
 #mainmenu ul li:last-child a {
  
-    background-color: rgb(24, 139, 233);
+    
     border-radius: 30px;
 }
 #mainmenu #polarys{
+    font-size: 2em;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+    }
+
+    @keyframes flip {
+        0%,80% {
+          transform: rotateY(360deg) 
+        }
+      }
+    hr{
+       
+        margin-top: 5px;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.2;
+    }
+    .maincontent{
+
+        justify-content: center;
+        margin-top: 150px;
+        
 
     }
-    hr{
-        
+    .maincontent #maintext h1{
+        color: #fff;
+        font-size: 3em;
+        text-align: center;
     }
-    
+    #subtext {
+        margin-top: 15px;
+        display: flex;
+  justify-content: center;
+    }
+    .maincontent #subtext h2{
+        font-weight: 100;
+        color: #9C9D9E;
+        font-size: 1.5em;
+    }
