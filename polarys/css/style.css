@@ -2,15 +2,26 @@
     --blue: #1363DF;
     --red: rgba(245,12,70,1);
     --purple: #813995;
-  }
+    --orange: #EE5337;
+    --orange2: #FF5B72;
+}
 *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #1E1E1E;
+    
 
+}
+section{
+    width:100%;
+	height:900px;
+	float:left;
+	
+}
+section#inicio{
+    background-color: #0B001D;
 }
 nav{
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
@@ -59,7 +70,7 @@ nav{
       transform: translateY(0)
     }
     20% {
-      transform: translateY(-20px)
+      transform: translateY(-10px)
     }
   }
 
@@ -71,11 +82,11 @@ nav{
 #mainmenu #polarys{
     font-size: 2em;
     animation: flip 2s infinite;
-    animation-delay: calc(.2s * var(--i))
+    animation-delay: calc(.5s * var(--i))
     }
 
     @keyframes flip {
-        0%,80% {
+        0%,50% {
           transform: rotateY(360deg) 
         }
       }
@@ -143,3 +154,44 @@ nav{
     .maincontent #btn-exp h3:hover{
         box-shadow: 0 0 1.5em  var(--purple), 0 0 0 currentColor;
     }
+
+    #mainabout{
+        position: relative;
+        top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #art{
+        padding-right: 200px;
+    }
+    #textabout{
+        color: #606060;
+        font-size: 1.5em;
+       line-height: 35px;
+       font-weight: 100;
+ 
+    }
+    #s {
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+    #contato{
+        background-color: #000;
+    }
+    #btnabout{
+       margin-top: 20px;
+        cursor: pointer;
+        background: linear-gradient(to right, var(--orange2), var(--orange));;
+        color: #fff;
+        font-weight: 100;
+        text-align: center;
+        border-radius: 30px;
+        transition: 0.5s;
+        width: 200px;
+    }
+  #aboutfather{
+    display: flex;
+    flex-direction: column;
+  }
