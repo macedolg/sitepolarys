@@ -220,13 +220,19 @@ nav{
     }
 
 
+
       .faq-content {
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
       }
       
       .faq-question {
         padding: 20px 0;
-        border-bottom: 1px dotted #ccc;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 20px;
       }
       
       .panel-title {
@@ -238,6 +244,11 @@ nav{
         display: block;
         cursor: pointer;
       }
+
+      .faq--card{
+        height: 100%;
+        width: 440px;
+    }
       
       .panel-content {
         font-size: 20px;
