@@ -4,6 +4,7 @@
     --purple: #813995;
     --orange: #EE5337;
     --orange2: #FF5B72;
+    --gray: #E9E9E9;
 }
 *{
     padding: 0;
@@ -13,6 +14,7 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
 a{
    text-decoration: none;	
 }
@@ -141,6 +143,8 @@ nav{
     .maincontent #btn-exp h3:hover{
         box-shadow: 0 0 1.5em  var(--purple), 0 0 0 currentColor;
     }
+
+    
 
    section#about{
     position: relative;
@@ -300,8 +304,50 @@ nav{
       .panel {
         display: none;
       }
-
-
+      section#contact{
+        background-color: var(--gray);  
+      }
+      #main-text-contact{
+          color: black;
+          text-align: center;
+      }
+      #main-text-contact h1{
+        font-weight: 600;
+        font-size: 2.5em;
+    }
+      #main-text-contact h2{
+          font-weight: 100;
+      }
+      #forms{
+          display: grid;
+          grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+          padding: 50px;
+      }
+      #nome{
+        width: 336px;
+        height: 60px;
+      }
+      #email{
+        width: 336px;
+        height: 60px;
+      }
+      #assunto{
+        width: 336px;
+        height: 60px;
+      }
+      #mensagem{
+        width: 300px;
+        height: 300px;
+       
+    }
+      #forms input{
+         border-radius: 30px;
+         border: 0;
+         box-shadow: 0px 0px 0px #000;
+         padding: 20px;
+         margin: 15px;
+      }
+   
     #footer{
         background: #0B001D;
         justify-content: space-around;
