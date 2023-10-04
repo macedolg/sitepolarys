@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 :root {
     --blue: #1363DF;
     --red: rgba(245,12,70,1);
@@ -30,11 +31,7 @@ section#home{
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav{
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-
-}
 #mainmenu{
     background-color: transparent;
     display: flex;
@@ -307,9 +304,25 @@ nav{
       section#contact{
         background-color: var(--gray);  
       }
+      .maincontact{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #leftcontact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: left;
+        padding-top: 100px;
+        padding-right: 100px;
+      }
       #main-text-contact{
           color: black;
           text-align: center;
+          
       }
       #main-text-contact h1{
         font-weight: 600;
@@ -320,7 +333,8 @@ nav{
       }
 
       #forms{
-
+        padding-top: 50px;
+        padding-bottom: 50px;
         align-items: flex-start;
         display: flex;
           flex-direction: row;
@@ -358,6 +372,58 @@ nav{
          margin: 15px;
       }
    
+      .wrapper{
+       
+
+      }
+      
+      .wrapper a{
+        display: block;
+        width: 210px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: var(--blue);
+        border: 2px solid var(--blue);
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+      }
+      
+      .wrapper a span{
+        position: relative;
+        z-index: 2;
+      }
+      
+      .wrapper a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--blue);
+        transition: all .35s;
+      }
+      
+      .wrapper a:hover{
+        color: #fff;
+      }
+      
+      .wrapper a:hover:after{
+        width: 100%;
+      }
+
+      iframe{
+        width: 642.6px;
+        height: 700px;
+        padding-top: 100px;
+        border-radius: 30px;
+      }
+
     #footer{
         background: #0B001D;
         justify-content: space-around;
@@ -431,3 +497,4 @@ nav{
     display: flex;
     flex-direction: row;
 }
+
